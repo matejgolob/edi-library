@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsd:schema xmlns:ecl="etso-code-lists.xsd" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="etso-code-lists.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:schema xmlns:cl="etso-code-lists.xsd" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="etso-code-lists.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:annotation>
     <xsd:documentation>
-      <Version>Current version 51</Version>
+      <Version>Current version 52</Version>
       <Titre>Complete compilation of ENTSO-E Code Lists used by ENTSO-E XML electronic documents and CIM XML electronic documents.</Titre>
       <Release>Current Release: 0</Release>
-      <ReleaseDate>2017-09-19</ReleaseDate>
+      <ReleaseDate>2017-11-08</ReleaseDate>
     </xsd:documentation>
   </xsd:annotation>
   <xsd:simpleType name="AllocationModeTypeList">
@@ -5947,6 +5947,16 @@ This enumeration is used in the XML instances based on IEC 62325.</Definition>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
+      <xsd:enumeration value="A50">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Long term capacity determination</Title>
+              <Definition>The process run at the long term timeframe to determine the capacity for use.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:simpleType name="QualityTypeList">
@@ -7115,6 +7125,26 @@ In the case of a Final Confirmation Report this is informing the recipient that 
             <CodeDescription>
               <Title>Special Condition</Title>
               <Definition>Special condition need to be fulfilled.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="B30">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Unverified</Title>
+              <Definition>Missing or not validated data.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="B31">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Verified</Title>
+              <Definition>Data has successfully passed the verification process.</Definition>
             </CodeDescription>
           </xsd:documentation>
         </xsd:annotation>

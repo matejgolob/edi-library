@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsd:schema xmlns:ecl="urn:entsoe.eu:wgedi:codelists" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:entsoe.eu:wgedi:codelists" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:schema xmlns:cl="urn:entsoe.eu:wgedi:codelists" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:entsoe.eu:wgedi:codelists" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:include schemaLocation="urn-entsoe-eu-local-extension-types.xsd" />
   <xsd:annotation>
     <xsd:documentation>
-      <Version>Current version 51</Version>
+      <Version>Current version 52</Version>
       <Titre>Complete compilation of ENTSO-E Code Lists used by ENTSO-E XML electronic documents and CIM XML electronic documents.</Titre>
       <Release>Current Release: 0</Release>
-      <ReleaseDate>2017-09-19</ReleaseDate>
+      <ReleaseDate>2017-11-08</ReleaseDate>
     </xsd:documentation>
   </xsd:annotation>
   <xsd:simpleType name="StandardAllocationModeTypeList">
@@ -5948,6 +5948,16 @@ This enumeration is used in the XML instances based on IEC 62325.</Definition>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
+      <xsd:enumeration value="A50">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Long term capacity determination</Title>
+              <Definition>The process run at the long term timeframe to determine the capacity for use.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:simpleType name="StandardQualityTypeList">
@@ -7116,6 +7126,26 @@ In the case of a Final Confirmation Report this is informing the recipient that 
             <CodeDescription>
               <Title>Special Condition</Title>
               <Definition>Special condition need to be fulfilled.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="B30">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Unverified</Title>
+              <Definition>Missing or not validated data.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="B31">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Verified</Title>
+              <Definition>Data has successfully passed the verification process.</Definition>
             </CodeDescription>
           </xsd:documentation>
         </xsd:annotation>
@@ -9621,105 +9651,105 @@ The DocumentTypeList is only used in XML instances using the ENTSO-E schema; oth
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:simpleType name="AllocationModeTypeList">
-    <xsd:union memberTypes="ecl:StandardAllocationModeTypeList ecl:LocalAllocationModeType" />
+    <xsd:union memberTypes="cl:StandardAllocationModeTypeList cl:LocalAllocationModeType" />
   </xsd:simpleType>
   <xsd:simpleType name="AnalogTypeList">
-    <xsd:union memberTypes="ecl:StandardAnalogTypeList ecl:LocalAnalogType" />
+    <xsd:union memberTypes="cl:StandardAnalogTypeList cl:LocalAnalogType" />
   </xsd:simpleType>
   <xsd:simpleType name="AssetTypeList">
-    <xsd:union memberTypes="ecl:StandardAssetTypeList ecl:LocalAssetType" />
+    <xsd:union memberTypes="cl:StandardAssetTypeList cl:LocalAssetType" />
   </xsd:simpleType>
   <xsd:simpleType name="AuctionTypeList">
-    <xsd:union memberTypes="ecl:StandardAuctionTypeList ecl:LocalAuctionType" />
+    <xsd:union memberTypes="cl:StandardAuctionTypeList cl:LocalAuctionType" />
   </xsd:simpleType>
   <xsd:simpleType name="BusinessTypeList">
-    <xsd:union memberTypes="ecl:StandardBusinessTypeList ecl:LocalBusinessType" />
+    <xsd:union memberTypes="cl:StandardBusinessTypeList cl:LocalBusinessType" />
   </xsd:simpleType>
   <xsd:simpleType name="CategoryTypeList">
-    <xsd:union memberTypes="ecl:StandardCategoryTypeList ecl:LocalCategoryType" />
+    <xsd:union memberTypes="cl:StandardCategoryTypeList cl:LocalCategoryType" />
   </xsd:simpleType>
   <xsd:simpleType name="ClassificationTypeList">
-    <xsd:union memberTypes="ecl:StandardClassificationTypeList ecl:LocalClassificationType" />
+    <xsd:union memberTypes="cl:StandardClassificationTypeList cl:LocalClassificationType" />
   </xsd:simpleType>
   <xsd:simpleType name="CodingSchemeTypeList">
-    <xsd:union memberTypes="ecl:StandardCodingSchemeTypeList ecl:LocalCodingSchemeType" />
+    <xsd:union memberTypes="cl:StandardCodingSchemeTypeList cl:LocalCodingSchemeType" />
   </xsd:simpleType>
   <xsd:simpleType name="CoordinateSystemTypeList">
-    <xsd:union memberTypes="ecl:StandardCoordinateSystemTypeList ecl:LocalCoordinateSystemType" />
+    <xsd:union memberTypes="cl:StandardCoordinateSystemTypeList cl:LocalCoordinateSystemType" />
   </xsd:simpleType>
   <xsd:simpleType name="ContractTypeList">
-    <xsd:union memberTypes="ecl:StandardContractTypeList ecl:LocalContractType" />
+    <xsd:union memberTypes="cl:StandardContractTypeList cl:LocalContractType" />
   </xsd:simpleType>
   <xsd:simpleType name="CurrencyTypeList">
-    <xsd:union memberTypes="ecl:StandardCurrencyTypeList ecl:LocalCurrencyType" />
+    <xsd:union memberTypes="cl:StandardCurrencyTypeList cl:LocalCurrencyType" />
   </xsd:simpleType>
   <xsd:simpleType name="CurveTypeList">
-    <xsd:union memberTypes="ecl:StandardCurveTypeList ecl:LocalCurveType" />
+    <xsd:union memberTypes="cl:StandardCurveTypeList cl:LocalCurveType" />
   </xsd:simpleType>
   <xsd:simpleType name="DirectionTypeList">
-    <xsd:union memberTypes="ecl:StandardDirectionTypeList ecl:LocalDirectionType" />
+    <xsd:union memberTypes="cl:StandardDirectionTypeList cl:LocalDirectionType" />
   </xsd:simpleType>
   <xsd:simpleType name="EicTypeList">
-    <xsd:union memberTypes="ecl:StandardEicTypeList ecl:LocalEicType" />
+    <xsd:union memberTypes="cl:StandardEicTypeList cl:LocalEicType" />
   </xsd:simpleType>
   <xsd:simpleType name="EnergyProductTypeList">
-    <xsd:union memberTypes="ecl:StandardEnergyProductTypeList ecl:LocalEnergyProductType" />
+    <xsd:union memberTypes="cl:StandardEnergyProductTypeList cl:LocalEnergyProductType" />
   </xsd:simpleType>
   <xsd:simpleType name="HVDCModeTypeList">
-    <xsd:union memberTypes="ecl:StandardHVDCModeTypeList ecl:LocalHVDCModeType" />
+    <xsd:union memberTypes="cl:StandardHVDCModeTypeList cl:LocalHVDCModeType" />
   </xsd:simpleType>
   <xsd:simpleType name="IndicatorTypeList">
-    <xsd:union memberTypes="ecl:StandardIndicatorTypeList ecl:LocalIndicatorType" />
+    <xsd:union memberTypes="cl:StandardIndicatorTypeList cl:LocalIndicatorType" />
   </xsd:simpleType>
   <xsd:simpleType name="MessageTypeList">
-    <xsd:union memberTypes="ecl:StandardMessageTypeList ecl:LocalMessageType" />
+    <xsd:union memberTypes="cl:StandardMessageTypeList cl:LocalMessageType" />
   </xsd:simpleType>
   <xsd:simpleType name="ObjectAggregationTypeList">
-    <xsd:union memberTypes="ecl:StandardObjectAggregationTypeList ecl:LocalObjectAggregationType" />
+    <xsd:union memberTypes="cl:StandardObjectAggregationTypeList cl:LocalObjectAggregationType" />
   </xsd:simpleType>
   <xsd:simpleType name="PaymentTermsTypeList">
-    <xsd:union memberTypes="ecl:StandardPaymentTermsTypeList ecl:LocalPaymentTermsType" />
+    <xsd:union memberTypes="cl:StandardPaymentTermsTypeList cl:LocalPaymentTermsType" />
   </xsd:simpleType>
   <xsd:simpleType name="PriceCategoryTypeList">
-    <xsd:union memberTypes="ecl:StandardPriceCategoryTypeList ecl:LocalPriceCategoryType" />
+    <xsd:union memberTypes="cl:StandardPriceCategoryTypeList cl:LocalPriceCategoryType" />
   </xsd:simpleType>
   <xsd:simpleType name="PriceDirectionTypeList">
-    <xsd:union memberTypes="ecl:StandardPriceDirectionTypeList ecl:LocalPriceDirectionType" />
+    <xsd:union memberTypes="cl:StandardPriceDirectionTypeList cl:LocalPriceDirectionType" />
   </xsd:simpleType>
   <xsd:simpleType name="ProcessTypeList">
-    <xsd:union memberTypes="ecl:StandardProcessTypeList ecl:LocalProcessType" />
+    <xsd:union memberTypes="cl:StandardProcessTypeList cl:LocalProcessType" />
   </xsd:simpleType>
   <xsd:simpleType name="QualityTypeList">
-    <xsd:union memberTypes="ecl:StandardQualityTypeList ecl:LocalQualityType" />
+    <xsd:union memberTypes="cl:StandardQualityTypeList cl:LocalQualityType" />
   </xsd:simpleType>
   <xsd:simpleType name="ReasonCodeTypeList">
-    <xsd:union memberTypes="ecl:StandardReasonCodeTypeList ecl:LocalReasonCodeType" />
+    <xsd:union memberTypes="cl:StandardReasonCodeTypeList cl:LocalReasonCodeType" />
   </xsd:simpleType>
   <xsd:simpleType name="RightsTypeList">
-    <xsd:union memberTypes="ecl:StandardRightsTypeList ecl:LocalRightsType" />
+    <xsd:union memberTypes="cl:StandardRightsTypeList cl:LocalRightsType" />
   </xsd:simpleType>
   <xsd:simpleType name="RoleTypeList">
-    <xsd:union memberTypes="ecl:StandardRoleTypeList ecl:LocalRoleType" />
+    <xsd:union memberTypes="cl:StandardRoleTypeList cl:LocalRoleType" />
   </xsd:simpleType>
   <xsd:simpleType name="StatusTypeList">
-    <xsd:union memberTypes="ecl:StandardStatusTypeList ecl:LocalStatusType" />
+    <xsd:union memberTypes="cl:StandardStatusTypeList cl:LocalStatusType" />
   </xsd:simpleType>
   <xsd:simpleType name="TarifTypeTypeList">
-    <xsd:union memberTypes="ecl:StandardTarifTypeTypeList ecl:LocalTarifTypeType" />
+    <xsd:union memberTypes="cl:StandardTarifTypeTypeList cl:LocalTarifTypeType" />
   </xsd:simpleType>
   <xsd:simpleType name="UnitMultiplier">
-    <xsd:union memberTypes="ecl:StandardUnitMultiplier ecl:LocalUnitMultiplier" />
+    <xsd:union memberTypes="cl:StandardUnitMultiplier cl:LocalUnitMultiplier" />
   </xsd:simpleType>
   <xsd:simpleType name="UnitOfMeasureTypeList">
-    <xsd:union memberTypes="ecl:StandardUnitOfMeasureTypeList ecl:LocalUnitOfMeasureType" />
+    <xsd:union memberTypes="cl:StandardUnitOfMeasureTypeList cl:LocalUnitOfMeasureType" />
   </xsd:simpleType>
   <xsd:simpleType name="UnitSymbol">
-    <xsd:union memberTypes="ecl:StandardUnitSymbol ecl:LocalUnitSymbol" />
+    <xsd:union memberTypes="cl:StandardUnitSymbol cl:LocalUnitSymbol" />
   </xsd:simpleType>
   <xsd:simpleType name="DocumentTypeList">
-    <xsd:union memberTypes="ecl:StandardDocumentTypeList ecl:LocalDocumentType" />
+    <xsd:union memberTypes="cl:StandardDocumentTypeList cl:LocalDocumentType" />
   </xsd:simpleType>
   <xsd:simpleType name="CodingSchemeType">
-    <xsd:union memberTypes="ecl:StandardCodingSchemeTypeList ecl:LocalCodingSchemeType" />
+    <xsd:union memberTypes="cl:StandardCodingSchemeTypeList cl:LocalCodingSchemeType" />
   </xsd:simpleType>
 </xsd:schema>
