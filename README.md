@@ -3,7 +3,7 @@
 This repo contains the following EDI Library components:
 
 - codelist
-
+- Bump to version 56
 
 ## Support
 
