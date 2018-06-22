@@ -3,10 +3,10 @@
   <xsd:include schemaLocation="urn-entsoe-eu-local-extension-types.xsd" />
   <xsd:annotation>
     <xsd:documentation>
-      <Version>Current version 52</Version>
+      <Version>Current version 54</Version>
       <Titre>Complete compilation of ENTSO-E Code Lists used by ENTSO-E XML electronic documents and CIM XML electronic documents.</Titre>
       <Release>Current Release: 0</Release>
-      <ReleaseDate>2017-11-08</ReleaseDate>
+      <ReleaseDate>2018-03-13</ReleaseDate>
     </xsd:documentation>
   </xsd:annotation>
   <xsd:simpleType name="StandardAllocationModeTypeList">
@@ -203,6 +203,16 @@
             <CodeDescription>
               <Title>TATL after curative RA</Title>
               <Definition>The Transitory admissible transmission limit (TATL) which is allowed after a curative Remedial Action (RA) has been applied.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="A14">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Computed Voltage</Title>
+              <Definition>This is the computed voltage for a given monitored element.</Definition>
             </CodeDescription>
           </xsd:documentation>
         </xsd:annotation>
@@ -441,8 +451,8 @@
         <xsd:annotation>
           <xsd:documentation>
             <CodeDescription>
-              <Title>Hydro Run-of-river and poundage</Title>
-              <Definition>A resource using Hydro Run-of-river and poundage for energy.</Definition>
+              <Title>Hydro Run-of-river and pondage</Title>
+              <Definition>A resource using Hydro Run-of-river and pondage for energy.</Definition>
             </CodeDescription>
           </xsd:documentation>
         </xsd:annotation>
@@ -2586,6 +2596,56 @@ Critical network elements are displayed in details and their impact on the marke
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
+      <xsd:enumeration value="B94">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Must Run</Title>
+              <Definition>A time series concerning must run generation.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="B95">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Procured capacity</Title>
+              <Definition>An accepted offer of balancing capacity.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="B96">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Used capacity</Title>
+              <Definition>The used cross-zonal balancing capacity.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="B97">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Estimated costs</Title>
+              <Definition>Estimated costs of the process.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="B98">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Estimated benefits</Title>
+              <Definition>Estimated benefits of the process.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:simpleType name="StandardCategoryTypeList">
@@ -3993,7 +4053,7 @@ This enumeration is used in the XML instances based on IEC 62325.</Definition>
           <xsd:documentation>
             <CodeDescription>
               <Title>System Operator area schedule</Title>
-              <Definition>A compilation of all external schedules concerning two System Operator areas of all balance responsible parties.</Definition>
+              <Definition>A compilation of all external schedules concerning two System Operator areas or a connector concerning two System Operator of all balance responsible parties.</Definition>
             </CodeDescription>
           </xsd:documentation>
         </xsd:annotation>
@@ -5188,6 +5248,56 @@ This enumeration is used in the XML instances based on IEC 62325.</Definition>
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
+      <xsd:enumeration value="B26">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Aggregated netted external schedule document</Title>
+              <Definition>A document used to report aggregated netted external schedules for a given border. </Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="B27">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>External TSO schedule</Title>
+              <Definition>A document used to report external TSO schedules for a given border or interconnector.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="StandardMarketProductTypeList">
+    <xsd:annotation>
+      <xsd:documentation>
+        <Uid>ET0008</Uid>
+        <Definition>The identification of the type of a product on a market view</Definition>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:NMTOKEN">
+      <xsd:enumeration value="A01">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Standard balancing product</Title>
+              <Definition>A harmonised balancing product defined by all TSOs for the exchange of balancing services.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="A02">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Specific balancing product</Title>
+              <Definition>A product different from a standard product.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:simpleType name="StandardObjectAggregationTypeList">
@@ -5964,6 +6074,26 @@ This enumeration is used in the XML instances based on IEC 62325.</Definition>
             <CodeDescription>
               <Title>Long term capacity determination</Title>
               <Definition>The process run at the long term timeframe to determine the capacity for use.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="A51">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Automatic frequency restoration reserve</Title>
+              <Definition>A process being described is for automatic frequency restoration reserves (aFRR).</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="A52">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Frequency containment reserve</Title>
+              <Definition>A process being described is for frequency containment reserves (FCR).</Definition>
             </CodeDescription>
           </xsd:documentation>
         </xsd:annotation>
@@ -8147,6 +8277,26 @@ In this case the resources are no longer available to all Acquiring System Opera
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
+      <xsd:enumeration value="A46">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Importing element</Title>
+              <Definition>An importing network element in which the flow measurement enters.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="A47">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Exporting element</Title>
+              <Definition>An exporting network element from which the flow measurement comes out.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:simpleType name="StandardTarifTypeTypeList">
@@ -8623,8 +8773,8 @@ In this case the resources are no longer available to all Acquiring System Opera
     <xsd:annotation>
       <xsd:documentation>
         <Uid>ET0003</Uid>
-        <Definition>(Synonym "MessageTypeList") The coded type of a document. The message type describes the principal characteristic of a document.
-The DocumentTypeList is only used in XML instances using the ENTSO-E schema; otherwise for XML instances based on IEC 62325 schema, the codelist is MessageTypeList.</Definition>
+        <Definition>The DocumentTypeList is only used in XML instances using deprecated ENTSO-E schema; otherwise for XML instances based CIM, the codelist is MessageTypeList. 
+Therefore, you are kindly advised to refer to the MessageType enumeration, which includes the same enumeration codes.</Definition>
       </xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:NMTOKEN">
@@ -9713,6 +9863,9 @@ The DocumentTypeList is only used in XML instances using the ENTSO-E schema; oth
   </xsd:simpleType>
   <xsd:simpleType name="MessageTypeList">
     <xsd:union memberTypes="ecl:StandardMessageTypeList ecl:LocalMessageType" />
+  </xsd:simpleType>
+  <xsd:simpleType name="MarketProductTypeList">
+    <xsd:union memberTypes="ecl:StandardMarketProductTypeList ecl:LocalMarketProductType" />
   </xsd:simpleType>
   <xsd:simpleType name="ObjectAggregationTypeList">
     <xsd:union memberTypes="ecl:StandardObjectAggregationTypeList ecl:LocalObjectAggregationType" />
