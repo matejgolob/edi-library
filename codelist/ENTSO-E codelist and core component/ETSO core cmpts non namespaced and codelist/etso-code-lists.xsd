@@ -2,10 +2,10 @@
 <xsd:schema xmlns:ecl="etso-code-lists.xsd" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="etso-code-lists.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:annotation>
     <xsd:documentation>
-      <Version>Current version 54</Version>
+      <Version>Current version 55</Version>
       <Titre>Complete compilation of ENTSO-E Code Lists used by ENTSO-E XML electronic documents and CIM XML electronic documents.</Titre>
       <Release>Current Release: 0</Release>
-      <ReleaseDate>2018-03-13</ReleaseDate>
+      <ReleaseDate>2018-04-28</ReleaseDate>
     </xsd:documentation>
   </xsd:annotation>
   <xsd:simpleType name="AllocationModeTypeList">
@@ -1403,7 +1403,7 @@ Note this definition might change when UCTE brings forward its coding requiremen
           <xsd:documentation>
             <CodeDescription>
               <Title>Load Frequency Control Program Schedule</Title>
-              <Definition>A time series providing the schedule information for the Load Frequency Control Program of a Control Area or a Control Block.</Definition>
+              <Definition>A time series providing the schedule information for the Load Frequency Control Program.</Definition>
             </CodeDescription>
           </xsd:documentation>
         </xsd:annotation>
@@ -2641,6 +2641,36 @@ Critical network elements are displayed in details and their impact on the marke
             <CodeDescription>
               <Title>Estimated benefits</Title>
               <Definition>Estimated benefits of the process.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="B99">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Load Shedding</Title>
+              <Definition>A time series concerning a load shedding used to avoid failure of the power system.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="C01">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Remaining Capacity</Title>
+              <Definition>A time series concerning the remaining capacity.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="C02">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Indicator of generation capacity adequacy</Title>
+              <Definition>Indicator of adequacy, it indicates if there is final generation remaining capacity after SMTA calculation.</Definition>
             </CodeDescription>
           </xsd:documentation>
         </xsd:annotation>
@@ -7815,6 +7845,16 @@ A party that is financially accountable for the reconciled volume of energy prod
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
+      <xsd:enumeration value="A45">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Energy Service Company (ESCO)</Title>
+              <Definition>A party offering energy-related services to the Party Connected to Grid, but not directly active in the energy value chain or the physical infrastructure itself. The ESCO may provide insight services as well as energy management services.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:simpleType name="StatusTypeList">
@@ -8292,6 +8332,46 @@ In this case the resources are no longer available to all Acquiring System Opera
             <CodeDescription>
               <Title>Exporting element</Title>
               <Definition>An exporting network element from which the flow measurement comes out.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="A48">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>To be optimized</Title>
+              <Definition>Describes an element which needs to be optimized by an optimization process.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="A49">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>To be monitored</Title>
+              <Definition>Describes an element which needs to be monitored by an optimization process.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="A50">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>To be included in capacity calculation</Title>
+              <Definition>Describes an element which needs to be taken into account in a capacity calculation process.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="A51">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Relative to previous point in time</Title>
+              <Definition>The quantity being described is a relative value to a previous point in time.</Definition>
             </CodeDescription>
           </xsd:documentation>
         </xsd:annotation>
