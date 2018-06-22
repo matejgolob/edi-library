@@ -2,10 +2,10 @@
 <xsd:schema xmlns:ecl="etso-code-lists.xsd" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="etso-code-lists.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <xsd:annotation>
     <xsd:documentation>
-      <Version>Current version 49</Version>
+      <Version>Current version 51</Version>
       <Titre>Complete compilation of ENTSO-E Code Lists used by ENTSO-E XML electronic documents and CIM XML electronic documents.</Titre>
       <Release>Current Release: 0</Release>
-      <ReleaseDate>2017-04-19</ReleaseDate>
+      <ReleaseDate>2017-09-19</ReleaseDate>
     </xsd:documentation>
   </xsd:annotation>
   <xsd:simpleType name="AllocationModeTypeList">
@@ -186,6 +186,26 @@
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
+      <xsd:enumeration value="A12">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>TATL after automatic RA</Title>
+              <Definition>The Transitory admissible transmission limit (TATL) which is allowed after an automatic Remedial Action (RA) has been applied.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="A13">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>TATL after curative RA</Title>
+              <Definition>The Transitory admissible transmission limit (TATL) which is allowed after a curative Remedial Action (RA) has been applied.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:simpleType name="AssetTypeList">
@@ -302,6 +322,16 @@
             <CodeDescription>
               <Title>Power plant connection</Title>
               <Definition>All the network equipment that link the generating unit to the grid.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="A12">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>FACTS</Title>
+              <Definition>Flexible Alternating Current Transmission System</Definition>
             </CodeDescription>
           </xsd:documentation>
         </xsd:annotation>
@@ -2521,6 +2551,26 @@ Critical network elements are displayed in details and their impact on the marke
             <CodeDescription>
               <Title>FlexibleNeed</Title>
               <Definition>The business type indicates that the need is optional.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="B91">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>GLSK Limitation</Title>
+              <Definition>A constraint related to a GLSK maximum or minimum limitation in the production or/and consumption shift.</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="B92">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Capacity ramping limitation</Title>
+              <Definition>A constraint related to a ramping limitation on the capacity offered at a given border.</Definition>
             </CodeDescription>
           </xsd:documentation>
         </xsd:annotation>
@@ -8486,12 +8536,32 @@ In this case the resources are no longer available to all Acquiring System Opera
           </xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
+      <xsd:enumeration value="MAR">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>MVAr</Title>
+              <Definition>The symbol of MVAr</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="MAW">
         <xsd:annotation>
           <xsd:documentation>
             <CodeDescription>
               <Title>MW</Title>
               <Definition>The symbol of MW</Definition>
+            </CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="OHM">
+        <xsd:annotation>
+          <xsd:documentation>
+            <CodeDescription>
+              <Title>Ohm</Title>
+              <Definition>The symbol of Ohm Unit</Definition>
             </CodeDescription>
           </xsd:documentation>
         </xsd:annotation>
